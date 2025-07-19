@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Python Documentation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav id="navbar">
+    <header>🐍 Python Docs</header>
+    <a class="nav-link" href="#Introduction">Introduction</a>
+    <a class="nav-link" href="#Variables_and_Data_Types">Variables and Data Types</a>
+    <a class="nav-link" href="#Control_Flow">Control Flow</a>
+    <a class="nav-link" href="#Functions">Functions</a>
+    <a class="nav-link" href="#Modules_and_Imports">Modules and Imports</a>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+      <header>Introduction</header>
+      <p>Python is a beginner-friendly programming language that's powerful, readable, and versatile.</p>
+      <p>It supports multiple paradigms: object-oriented, functional, and procedural programming.</p>
+      <p>Used in web, data science, AI, automation, game dev, and more.</p>
+      <p>It has a huge standard library and thousands of third-party packages.</p>
+      <p>First released in 1991 by Guido van Rossum.</p>
+      <code>print("Hello, Python World!")</code>
+    </section>
+
+    <section class="main-section" id="Variables_and_Data_Types">
+      <header>Variables and Data Types</header>
+      <p>Variables store data — no type declaration required!</p>
+      <ul>
+        <li>int — whole numbers</li>
+        <li>float — decimal numbers</li>
+        <li>str — text values (strings)</li>
+        <li>bool — True or False values</li>
+        <li>list, tuple, set, dict — built-in collections</li>
+      </ul>
+      <p>Use `type()` to check a variable's type.</p>
+      <p>Python is dynamically typed but supports type hints.</p>
+      <p>Everything in Python is an object.</p>
+      <code>x = 10</code>
+      <code>pi = 3.14</code>
+      <code>name = "Leon"</code>
+      <code>is_cool = True</code>
+    </section>
+
+    <section class="main-section" id="Control_Flow">
+      <header>Control Flow</header>
+      <p>Python uses indentation for blocks — no braces!</p>
+      <p>Supports if/elif/else and logical operators (and/or/not).</p>
+      <p>For loops iterate over any iterable (list, dict, string).</p>
+      <p>While loops execute based on a condition.</p>
+      <p>Use break/continue to control loops.</p>
+      <code>
+if score > 90:
+    print("Excellent!")
+elif score > 70:
+    print("Good!")
+else:
+    print("Keep going!")
+      </code>
+    </section>
+
+    <section class="main-section" id="Functions">
+      <header>Functions</header>
+      <p>Functions use `def` to declare reusable blocks of logic.</p>
+      <ul>
+        <li>Use `def` to define a function</li>
+        <li>Can accept parameters</li>
+        <li>May return a value</li>
+        <li>Can use default arguments</li>
+        <li>Support *args and **kwargs</li>
+      </ul>
+      <p>Lambda functions are used for short, anonymous functions.</p>
+      <p>Functions are first-class objects (can be passed around).</p>
+      <code>def greet(name):
+    return f"Hello, {name}!"</code>
+    </section>
+
+    <section class="main-section" id="Modules_and_Imports">
+      <header>Modules and Imports</header>
+      <p>Python files can be imported as modules.</p>
+      <ul>
+        <li>Use `import` to include modules</li>
+        <li>Standard examples: `math`, `random`, `os`, `sys`</li>
+        <li>Use `from module import x` for specific items</li>
+        <li>Third-party libraries are installed via `pip`</li>
+        <li>Modules can be custom-made or pre-installed</li>
+      </ul>
+      <code>import math</code>
+      <code>from math import sqrt</code>
+      <code>import numpy as np</code>
+    </section>
+  </main>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>
